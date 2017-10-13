@@ -1,0 +1,295 @@
+/*---------- Header Styles ----------*/
+
+#header .site-title a, #header .site-title a:visited
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-title
+{
+    font-family: "futura-pt";
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    width: 30%;
+    vertical-align: middle;
+    line-height: 1em;
+    z-index: 8002;
+    position: relative;
+}
+/*----- break -----*/
+
+
+
+/*---------- About Us Styles ----------*/
+
+h1, h3
+{
+    margin: 1em 0 0.5em;
+    background-color: #e0f3e9;
+    color: #fff;
+}
+
+h3
+{
+    letter-spacing: 1px;
+    font-family: 'proxima-nova';
+    font-size: 22px;
+    line-height: 1.8em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0.015em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.text-align-center
+{
+    text-align: center;
+}
+
+div.outline
+{
+    outline: none;
+}
+
+div.column
+{
+    width: 83.3333%;
+}
+
+div.block
+{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+/*----- break -----*/
+
+
+
+/*---------- Signup Form Styles ----------*/
+
+.btn-block
+{
+    display: block;
+    width: 100%;
+}
+
+.btn-lg
+{
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.btn-primary
+{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn
+{
+    margin: auto;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 3px solid transparent;
+}
+
+.checkbox
+{
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+label
+{
+    font-style: oblique;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.form-signup
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signup .form-signup-heading, .form-signup .checkbox
+{
+    margin-bottom: 10px;
+}
+
+.form-signup .checkbox
+{
+    font-weight: normal;
+}
+
+.form-signup .form-control
+{
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px dashed aquamarine;
+    border-radius: 5% 5% 0 0;
+}
+
+.form-signup .form-control:focus
+{
+    z-index: 2;
+}
+
+.form-signup input[type='text']
+{
+    margin-bottom: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signup input[type='email']
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signup input[type='password']
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/*----- break -----*/
+
+
+
+/*---------- Spoiler Styles ----------*/
+
+img
+{
+    display: block;
+    width: 350px;
+    margin: 30px auto;
+}
+
+button
+{
+    background: #dae1e4;
+    border: none;
+    border-radius: 5px;
+    color: #1d3c6a;
+    font-size: 24px;
+    width: 480px;
+    padding: 40px 0;
+    margin: -40px -20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.spoiler
+{
+    background: #1d3c6a;
+    width: 440px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.spoiler span
+{
+    color: #dae1e4;
+}
+/*----- break -----*/
+
+
+
+/*---------- Operating Hours Table Styles ----------*/
+
+body table
+{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+table
+{
+    max-width: 960px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption
+{
+    color: #747474;
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+thead th
+{
+    font-weight: 400;
+    background: #3ab4b5;
+    color: #ffcf80;
+}
+
+thead th:first-child
+{
+    background: white;
+}
+
+tr
+{
+    background: #3ab579;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+    font-size: 23px;
+    font-style: bold;
+}
+
+tr:nth-child(even)
+{
+    background: #ffcf80;
+}
+
+th, td
+{
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+}
+
+tfoot tr
+{
+    background: none;
+}
+
+tfoot td
+{
+    padding: 10px 2px;
+    font-size: 0.8em;
+    font-style: oblique;
+    color: #8a97a0;
+}
+/*----- break -----*/
