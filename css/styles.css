@@ -1,28 +1,86 @@
-/*---------- Header Styles ----------*/
+/*---------- Navigation Bar Styles ----------*/
 
-#header .site-title a, #header .site-title a:visited
+body
 {
-    text-decoration: none;
+    padding-top: 50px;
+}
+
+.starter-template
+{
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.navbar
+{
+    border-color: transparent;
+    font-family: Montserrat,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+navbar .navbar-brand
+{
+    color: #fed136;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus, .navbar .navbar-brand:active, .navbar .navbar-brand.active
+{
+    color: #e0f3e9;
+}
+
+.navbar .nav li a
+{
+    font-weight: 400;
     color: #fff;
 }
 
-.site-title
+.navbar .nav li a:hover, .navbar .nav li a:focus
 {
-    font-family: "futura-pt";
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    display: table-cell;
-    width: 30%;
-    vertical-align: middle;
-    line-height: 1em;
-    z-index: 8002;
-    position: relative;
+    outline: 0;
+    color: #fed136;
+}
+
+@media (min-width: 768px)
+{
+    body
+    {
+        padding-top: 120px;
+    }
+
+    .navbar
+    {
+        padding: 25px 0;
+        border: none;
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
+        background-image: -moz-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.0001));
+        background-image: -o-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.0001));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+    }
+
+    .navbar .navbar-brand
+    {
+        font-size: 3em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar.navbar-shrink
+    {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar.navbar-shrink .navbar-brand
+    {
+        font-size: 2em;
+    }
 }
 /*----- break -----*/
 
@@ -190,7 +248,7 @@ img
     margin: 30px auto;
 }
 
-button
+button.spoiler-btn
 {
     background: #dae1e4;
     border: none;
