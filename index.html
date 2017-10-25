@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang='en'>
-    
     <head>
-        
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content="width=device-width, initial-scale=1">
         <link rel='icon' href='../../favicon.ico'>
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
         <link rel='stylesheet' href='css/styles.css'>
-        
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
-
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top" id='mainNav'>
             <div class='container'>
                 <div class='navbar-header'>
@@ -33,19 +29,48 @@
                 </div>
             </div>
         </nav>
-
-        <div class='column'>
-            <div class='block'>
-                <div class='outline'>
-                    <h1 class='text-align-center'>A Deli, But Also a Café</h1>
-                    <h3 class='text-align-center'>
-                        Morels Cafe is Louisville's finest destination for vegan food that doesn't involve bland greens, eggplant, or tofu. We like to indulge in the finer foods, like Philly Cheesesteak Fries, Buffalo Wings, and of course, Farbys. We also offer amazing foods to be taken home in our deli, as well as a full line of Kentucky Kombucha on tap.
-                    </h3>
+        <!-- about -->
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col'>
+                    <h1 class='about'>A Deli, But Also a Café</h1>
+                    <p class='about'>Morels Cafe is Louisville's finest destination for vegan food that doesn't involve bland greens, eggplant, or tofu. We like to indulge in the finer foods, like Philly Cheesesteak Fries, Buffalo Wings, and of course, Farbys. We also offer amazing foods to be taken home in our deli, as well as a full line of Kentucky Kombucha on tap.</p>
                 </div>
             </div>
-        </div>
-
+        </div><!-- /about -->
+        <!-- menu -->
+        <h1 id='menu' class="display-4 text-center my-5">>> MENU <<</h1>
+        <div class='row'>
+            <div class="bg-warning col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class='card-img-top center-block' src='img/menu/chick-faux-le.jpg' alt='Chick-faux-le'>
+                    <div class='card-body'>
+                        <h4 class="card-title text-center">Chick-faux-le</h4>
+                        <p class="card-text">house-breaded, deep fried chicken patty on a toasted brioche bun with lettuce, red onions, pickles and our signature sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-info col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class='card-img-top center-block' src='img/menu/salad.jpg' alt='Salad'>
+                    <div class='card-body'>
+                        <h4 class="card-title text-center">Chicken Caesar Salad</h4>
+                        <p class='card-text'>chopped lettuce tossed in creamy caesar dressing w/ grilled chicken, house-made croutons & shaved parmesan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-warning col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class='card-img-top center-block' src='img/menu/sliders.jpg' alt='Sliders'>
+                    <div class='card-body'>
+                        <h4 class="card-title text-center">Pulled Pork Sliders</h4>
+                        <p class="card-text">2014 Taste Of Frankfort award winning pair of pulled pork Peach bbq sliders on a toasted bun w/creamy coleslaw. served with mac & cheese and house pickles</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /menu -->
         <div class='container'>
+            <!-- form -->
             <form class='form-signup'>
                 <h2 class='form-signup-heading'>Please fill out the form below to gain points with every purchase and earn rewards on select menu items.</h2>
                 <label for='inputFirstName'>First name</label>
@@ -60,76 +85,109 @@
                     <label><input type='checkbox'>Receive Weekly Updates</label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type='submit'>Sign Up</button>
-            </form>
+            </form><!-- /form -->
         </div>
 
-        <img src='img/farby.jpg'/>
+        <img class ='spoiler-img' src='img/farby.jpg'/>
         <p class='spoiler'>
             <span>Buffalo Wings!!</span>
         </p>
         
         <footer>
-        
-            <table> <!-- table element -->
-                <caption>Hours</caption> <!-- table caption element -->
-                <thead> <!-- table head element -->
-                    <tr> <!-- table row -->
-                        <th scope='col' style="font-weight: bold"></th> <!-- table column header -->
-                        <th scope='col' style="font-weight: bold">A.M.</th> <!-- table column header -->
-                        <th scope='col' style="font-weight: bold">P.M.</th> <!-- table column header -->
-                    </tr> <!-- close table row -->
-                </thead> <!-- close table head element -->
-                <tfoot> <!-- table foot element -->
-                    <tr> <!-- table row -->
-                        <td colspan='4'>Closed on Federal Holidays.</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                </tfoot> <!-- close table foot element -->
-                <tbody> <!-- table body element -->
-                    <tr> <!-- table row -->
-                        <th scope='row'>Monday</th> <!-- table row header -->
-                        <td>Closed</td> <!-- table cell -->
-                        <td>Closed</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                    <tr> <!-- table row -->
-                        <th scope='row'>Tuesday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>8:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                    <tr> <!-- table row -->
-                        <th scope='row'>Wednesday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>8:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                    <tr> <!-- table row -->
-                        <th scope='row'>Thursday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>8:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                     <tr> <!-- table row -->
-                        <th scope='row'>Friday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>9:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                     <tr> <!-- table row -->
-                        <th scope='row'>Saturday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>9:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                     <tr> <!-- table row -->
-                        <th scope='row'>Sunday</th> <!-- table row header -->
-                        <td>11:00</td> <!-- table cell -->
-                        <td>7:00</td> <!-- table cell -->
-                    </tr> <!-- close table row -->
-                </tbody> <!-- close table body element -->
-            </table> <!-- close table element -->
-            
-        </footer>
-        
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='contact-grid'>
+                            <div class='social-icons'>
+                                <a class='social' href='https://www.facebook.com/MorelsCafe/'><i class="fa fa-facebook-square fa-4x" aria-hidden='true'></i></a>
+                                <a class='social' href='https://www.instagram.com/morelscafe/'><i class="fa fa-instagram fa-4x" aria-hidden='true'></i></a>
+                            </div>
+                            <h1 class='location'><br>LOCATION<br><br><br></h1>
+                            <p class='contact'>619 Baxter Avenue</p>
+                            <p class='contact'>Louisville, KY 40204<br><br></p>
+                            <h2 class='contact'>Come on Farby, let's go party!<br><br></h2>
+                            <div id='contact'>
+                                <p class='contact'>Call us: <span>(502) 409-5916</span><br></p>
+                            </div>
+                            <p class='contact'>Our little grocery store is expanding more each week!</p>
+                            <p class='contact'>Note: we are on our last run of bacon bits for a while, so get some while you can!</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div id='new-cupcakes' class='food-cupcakes'>
+                            <h2 >White chocolate blueberry cupcakes and chocolate coconut cupcakes!!!!</h2>
+                            <img src='img/cupcakes.jpg' alt='Cupcakes'>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <!-- table -->
+                        <table>
+                            <!-- table caption -->
+                            <caption>Hours</caption><!-- /table caption -->
+                                <!-- table head -->
+                                <thead>
+                                    <tr><!-- table row -->
+                                        <th scope='col' style="font-weight: bold"></th><!-- table column header -->
+                                        <th scope='col' style="font-weight: bold">A.M.</th><!-- table column header -->
+                                        <th scope='col' style="font-weight: bold">P.M.</th><!-- table column header -->
+                                    </tr><!-- /table row -->
+                                </thead><!-- /table head -->
+                                <!-- table foot -->
+                                <tfoot>
+                                    <tr><!-- table row -->
+                                        <td colspan='4'>Closed on Federal Holidays.</td> <!-- table cell -->
+                                    </tr><!-- /table row -->
+                                </tfoot><!-- /table foot -->
+                                <!-- table body -->
+                                <tbody>
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Monday</th><!-- table row header -->
+                                        <td>Closed</td> <!-- table cell -->
+                                        <td>Closed</td> <!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Tuesday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>8:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Wednesday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>8:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Thursday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>8:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Friday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>9:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Saturday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>9:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                    <tr><!-- table row -->
+                                        <th scope='row'>Sunday</th><!-- table row header -->
+                                        <td>11:00</td><!-- table cell -->
+                                        <td>7:00</td><!-- table cell -->
+                                    </tr><!-- /table row -->
+                                </tbody><!-- /table body  -->
+                        </table><!-- /table -->
+                    </div>
+                </div>
+            </div>
+        </footer><!-- /footer -->
+        <!-- copyright -->
+        <div id='copyright' class='closing-grid'>
+            <p>&copy; 2017 Andrej Cucilovic of Code Louisville. All Rights Reserved.</p>
+        </div><!-- /copyright -->
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
         <script src='js/spoiler.js' type='text/javascript' charset='utf-8'></script>
         <script src='js/scroll.js' type='text/javascript' charset='utf-8'></script>
-        
     </body>
-    
 </html>

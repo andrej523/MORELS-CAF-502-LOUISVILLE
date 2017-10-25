@@ -1,14 +1,7 @@
 /*---------- Navigation Bar Styles ----------*/
-
 body
 {
     padding-top: 50px;
-}
-
-.starter-template
-{
-    padding: 40px 15px;
-    text-align: center;
 }
 
 .navbar
@@ -22,18 +15,19 @@ body
 
 navbar .navbar-brand
 {
-    color: #fed136;
+    color: #faf3bc;
 }
 
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus, .navbar .navbar-brand:active, .navbar .navbar-brand.active
 {
-    color: #e0f3e9;
+    color: #4cc4a7;
 }
 
 .navbar .nav li a
 {
+    font-size: 18px;
     font-weight: 400;
-    color: #fff;
+    color: #faf3bc;
 }
 
 .navbar .nav li a:hover, .navbar .nav li a:focus
@@ -55,8 +49,8 @@ navbar .navbar-brand
         border: none;
         background-color: transparent;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
-        background-image: -moz-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.0001));
-        background-image: -o-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.0001));
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0001));
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
@@ -81,57 +75,60 @@ navbar .navbar-brand
     {
         font-size: 2em;
     }
-}
-/*----- break -----*/
-
-
-
+}/*----- break -----*/
 /*---------- About Us Styles ----------*/
-
-h1, h3
+h1.about, p.about
 {
-    margin: 1em 0 0.5em;
-    background-color: #e0f3e9;
     color: #fff;
+    margin: 2em 0 0.5em;
 }
 
-h3
+h1.about
 {
-    letter-spacing: 1px;
+    font-size: 45px;
+}
+
+p.about
+{
+    align-content: center;
     font-family: 'proxima-nova';
-    font-size: 22px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
     line-height: 1.8em;
+    letter-spacing: 0.015em;
     text-transform: none;
     text-decoration: none;
-    letter-spacing: 0.015em;
-    font-weight: 300;
-    font-style: normal;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.text-align-center
+.about
 {
     text-align: center;
 }
 
-div.outline
+div.col
 {
     outline: none;
 }
 
-div.column
+div.container-fluid
 {
-    width: 83.3333%;
+    background-image: url('../img/banner.jpg');
+    background-size: auto;
+    margin-top: 50px;
+    padding-bottom: 105px;
+    width: auto;
 }
 
-div.block
+div.row
 {
+/*    background-color: #4cc4a7;*/
     padding-left: 17px;
     padding-right: 17px;
-}
-/*----- break -----*/
-
-
-
+}/*----- break -----*/
 /*---------- Signup Form Styles ----------*/
 
 .btn-block
@@ -203,7 +200,6 @@ label
     position: relative;
     height: auto;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     padding: 10px;
     font-size: 16px;
     border: 2px dashed aquamarine;
@@ -234,14 +230,10 @@ label
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-}
-/*----- break -----*/
-
-
-
+}/*----- break -----*/
 /*---------- Spoiler Styles ----------*/
 
-img
+img.spoiler-img
 {
     display: block;
     width: 350px;
@@ -276,17 +268,61 @@ button.spoiler-btn
 .spoiler span
 {
     color: #dae1e4;
+}/*----- break -----*/
+/*---------- Contact Styles ----------*/
+
+a.social
+{
+    display: inline-block;
+    color: #4fb69f;
+    text-decoration: none;
+    width: 5em;
 }
-/*----- break -----*/
 
+.container .row
+{
+    background: #dfa182;
+    font-family: 'Nunito';
+    width: fill;
+}
 
+div.social-icons
+{
+    padding-top: 23px;
+    text-align: left;
+}
 
+.food-cupcakes
+{
+    width: 405px;
+    margin-right:0px;
+}
+
+h1.location, h2.contact
+{
+    font-size: 1.75em;
+    color: #c44c69;
+    margin-right: 0px;
+}
+
+p.contact
+{
+    color: honeydew;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#new-cupcakes img
+{
+    border: 8px solid #faf3bc;
+    margin: 0 0 20px 0;
+}/*----- break -----*/
 /*---------- Operating Hours Table Styles ----------*/
 
 body table
 {
     font-family: 'Nunito', sans-serif;
-    color: #fff;
+    color: #faf3bc;
 }
 
 table
@@ -295,6 +331,7 @@ table
     margin: 10px auto;
     border-collapse: collapse;
     border-spacing: 0;
+    
 }
 
 caption
@@ -303,23 +340,24 @@ caption
     font-size: 1.6em;
     font-weight: 400;
     padding: 10px 0;
+    text-align: center;
 }
 
 thead th
 {
     font-weight: 400;
     background: #3ab4b5;
-    color: #ffcf80;
+    color: #faf3bc;
 }
 
 thead th:first-child
 {
-    background: white;
+    background: #dfa182;
 }
 
 tr
 {
-    background: #3ab579;
+    background: #4cc4a7;
     border-bottom: 1px solid #fff;
     margin-bottom: 5px;
     font-size: 23px;
@@ -328,7 +366,7 @@ tr
 
 tr:nth-child(even)
 {
-    background: #ffcf80;
+    background: #c44c69;
 }
 
 th, td
@@ -349,5 +387,18 @@ tfoot td
     font-size: 0.8em;
     font-style: oblique;
     color: #8a97a0;
-}
-/*----- break -----*/
+}/*----- break -----*/
+/*---------- Copyright Styles ----------*/
+
+#copyright
+{
+    background: #4cc4a7;
+    border: 8px solid #faf3bc;
+    border-top: 8px solid #c44c69;
+    font-size: 18px;
+    padding: 10px 0px;
+    margin:  15px 0px;
+    text-align: center;
+    text-shadow: 3px 3px 5px #faf3bc;
+    width: fill;
+}/*----- break -----*/
