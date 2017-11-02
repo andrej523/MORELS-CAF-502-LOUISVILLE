@@ -1,3 +1,8 @@
+/*---------- Global Styles ----------*/
+html
+{
+    font-size: 10px;
+}/*----- break -----*/
 /*---------- Navigation Bar Styles ----------*/
 body
 {
@@ -25,7 +30,7 @@ navbar .navbar-brand
 
 .navbar .nav li a
 {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 400;
     color: #faf3bc;
 }
@@ -60,9 +65,9 @@ navbar .navbar-brand
     .navbar .navbar-brand
     {
         font-size: 3em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
     }
 
     .navbar.navbar-shrink
@@ -75,6 +80,30 @@ navbar .navbar-brand
     {
         font-size: 2em;
     }
+}/*----- break -----*/
+/*---------- Menu Bar Styles ----------*/
+h1 span
+{
+    color: #fff;
+}
+
+img.img-circle
+{
+    border: 7px dashed #4cc4a7;
+    border-width: 5px;
+}
+
+#menu
+{
+    background: rgba(196, 76, 105, 0.4);
+    color: black;
+    border: 8px solid #faf3bc;
+    border-top: 8px solid #c44c69;
+    font-size: 23px;
+    padding: 13px;
+    margin:  auto;
+    text-align: center;
+    word-spacing: 90px;
 }/*----- break -----*/
 /*---------- About Us Styles ----------*/
 h1.about, p.about
@@ -125,12 +154,10 @@ div.container-fluid
 
 div.row
 {
-/*    background-color: #4cc4a7;*/
     padding-left: 17px;
     padding-right: 17px;
 }/*----- break -----*/
 /*---------- Signup Form Styles ----------*/
-
 .btn-block
 {
     display: block;
@@ -175,7 +202,7 @@ label
 {
     font-style: oblique;
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .form-signup
@@ -232,7 +259,6 @@ label
     border-top-right-radius: 0;
 }/*----- break -----*/
 /*---------- Spoiler Styles ----------*/
-
 img.spoiler-img
 {
     display: block;
@@ -269,8 +295,232 @@ button.spoiler-btn
 {
     color: #dae1e4;
 }/*----- break -----*/
-/*---------- Contact Styles ----------*/
+/*---------- Testimonials Styles ----------*/
+#testimonials div, ul, ol, li, h1, h2, p
+{
+    margin: 0;
+    padding: 0;
+}
 
+.col-twelve
+{
+    width: 100%;
+}
+
+#testimonials
+{
+    background: #fff;
+    padding: 12rem 0 7.8rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#testimonials h2
+{
+    font-family: 'montserrat-bold', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.667;
+    color: #07617d;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: relative;
+    margin-bottom: 4.2rem;
+}
+
+#testimonials .flex-container
+{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#testimonial-slider
+{
+    margin: 0 0 3rem 0;
+    position: relative;
+}
+
+#testimonial-slider .slides
+{
+    padding-bottom: 3rem;
+}
+
+#testimonial-slider p
+{
+    font-family: 'librebaskerville-bold', serif;
+    font-size: 3rem;
+    line-height: 1.8;
+    color: #151515;
+}
+
+#testimonial-slider p::before, #testimonial-slider p::after
+{
+    display: inline-block;
+    font-family: 'librebaskerville-bold', serif;
+    font-size: 3.6rem;
+    line-height: 1;
+}
+
+#testimonial-slider p::before
+{
+    content: '\201C';
+}
+
+#testimonial-slider p::after
+{
+    content: '\201D';
+}
+
+#testimonial-slider .testimonial-author
+{
+    margin-top: 4.2rem;
+}
+
+#testimonial-slider .testimonial-author img
+{
+    width: 7.4rem;
+    height: 7.4rem;
+    margin: 0 auto 1.2rem auto;
+    display: block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#testimonial-slider .testimonial-author .author-info
+{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'librebaskerville-bold', sans-serif;
+    font-size: 2rem;
+    margin-top: .9rem;
+    margin-bottom: 3rem;
+    color: #151515;
+}
+
+#testimonial-slider .testimonial-author .author-info span
+{
+    display: block;
+    font-family: 'montserrat-bold', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.313;
+    letter-spacing: 0;
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: .3rem;
+}
+
+#testimonials .flex-control-nav
+{
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: -1.5rem;
+}
+
+#testimonials .flex-control-nav li
+{
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+}
+
+#testimonials .flex-control-paging li a
+{
+    width: 9px;
+    height: 9px;
+    background-color: #959595;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+#testimonials .flex-control-paging li a:hover
+{
+    background-color: #555555;
+}
+
+#testimonials .flex-control-paging li a.flex-active
+{
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 1024px)
+{
+    #testimonial-slider p
+    {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #testimonials h2
+    {
+        font-size: 1.7rem;
+    }
+
+    #testimonial-slider p
+    {
+        font-size: 2.5rem;
+    }
+    
+    #testimonial-slider .testimonial-author img
+    {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+    
+    #testimonial-slider .testimonial-author .author-info
+    {
+        font-size: 1.8rem;
+    }
+    
+    #testimonial-slider .testimonial-author .author-info span
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    #testimonials .flex-container
+    {
+        width: 90%;
+    }
+
+    #testimonial-slider p
+    {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    #testimonials h2
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    #testimonials .flex-container
+    {
+        width: 100%;
+    }
+
+    #testimonial-slider p
+    {
+        font-size: 2rem;
+    }
+}/*----- break -----*/
+/*---------- Contact Styles ----------*/
 a.social
 {
     display: inline-block;
@@ -279,7 +529,7 @@ a.social
     width: 5em;
 }
 
-.container .row
+#contact-container
 {
     background: #dfa182;
     font-family: 'Nunito';
@@ -295,7 +545,8 @@ div.social-icons
 .food-cupcakes
 {
     width: 405px;
-    margin-right:0px;
+    margin-right: 0px;
+    padding-top: 4em;
 }
 
 h1.location, h2.contact
@@ -318,7 +569,6 @@ p.contact
     margin: 0 0 20px 0;
 }/*----- break -----*/
 /*---------- Operating Hours Table Styles ----------*/
-
 body table
 {
     font-family: 'Nunito', sans-serif;
@@ -389,7 +639,6 @@ tfoot td
     color: #8a97a0;
 }/*----- break -----*/
 /*---------- Copyright Styles ----------*/
-
 #copyright
 {
     background: #4cc4a7;
