@@ -212,6 +212,28 @@ label
     margin: 0 auto;
 }
 
+span.warning
+{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    background: #e5f7f3;
+    width: 135px;
+    padding: 4px;
+    float: right;
+    margin-bottom: 8px;
+    color: crimson;
+}
+
+span.tip
+{
+    display: grid;
+    font-size: 1.5em;
+    text-align: right;
+    background: #f3e5f7;
+    color: dodgerblue;
+}
+
 .form-signup .form-signup-heading, .form-signup .checkbox
 {
     margin-bottom: 10px;
@@ -262,38 +284,40 @@ label
 img.spoiler-img
 {
     display: block;
-    width: 350px;
-    margin: 30px auto;
+    width: 650px;
+    margin: 100px auto;
 }
 
 button.spoiler-btn
 {
-    background: #dae1e4;
+    background: #3ab4b5;
     border: none;
-    border-radius: 5px;
+    border-radius: 90px;
     color: #1d3c6a;
-    font-size: 24px;
+    font-size: 34px;
     width: 480px;
-    padding: 40px 0;
-    margin: -40px -20px;
+    padding: 29px 10px;
+    margin: 45px -40px;
     outline: none;
     cursor: pointer;
 }
 
 .spoiler
 {
-    background: #1d3c6a;
-    width: 440px;
-    margin: 0 auto 20px;
-    border-radius: 5px;
-    padding: 40px 20px;
+    background: white;
     text-align: center;
-    font-size: 24px;
+    border-radius: 5px;
+    color: #1d3c6a;
+    font-size: 34px;
+    width: 380px;
+    padding: 8px 10px;
+    margin: 5px 30px;
+    outline: none;
 }
 
-.spoiler span
+.spoiler a
 {
-    color: #dae1e4;
+    color: #dfa182;
 }/*----- break -----*/
 /*---------- Testimonials Styles ----------*/
 #testimonials div, ul, ol, li, h1, h2, p
@@ -581,7 +605,6 @@ table
     margin: 10px auto;
     border-collapse: collapse;
     border-spacing: 0;
-    
 }
 
 caption

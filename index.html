@@ -4,10 +4,8 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content="width=device-width, initial-scale=1">
-        <link rel='icon' href='../../favicon.ico'>
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
         <link rel='stylesheet' href='css/styles.css'>
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" id='mainNav'>
@@ -39,7 +37,7 @@
             </div>
         </div><!-- /about -->
         <!-- menu -->
-        <h1 id='menu'><span>&curlyeqprec;</span> SNACKS <span>&ac;</span> PLATES  <span>&ac;</span> SIDES  <span>&ac;</span> KIDS <span>&ac;</span> DESERT <span>&curlyeqsucc;</span></h1>
+        <h1 id='menu'><span>&curlyeqprec;</span> SNACKS <span>&ac;</span> PLATES <span>&ac;</span> SIDES <span>&ac;</span> KIDS <span>&ac;</span> DESERT <span>&curlyeqsucc;</span></h1>
         <div class='row'>
             <div class="bg-info col-md-6 col-lg-4">
                 <div class="card mb-3">
@@ -69,35 +67,54 @@
                 </div>
             </div>
         </div><!-- /menu -->
-        <!-- middle -->
-        <section id='test' class="container">
+        <section class="container">
             <div class='row'>
                 <div class='col-sm-6'>
-                    <img class ='spoiler-img' src='img/farby.jpg'/>
+                    <img class ='spoiler-img' src='img/wings.jpg'/>
                     <p class='spoiler'>
-                        <span>Buffalo Wings!!</span>
+                        <span>
+                            <a href='https://www.instagram.com/p/BZUdkWCg9yx/?taken-by=morelscafe' target='_blank'>Buffalo Wings!!</a>
+                            <p class='spoiler-img'>Don't let the chicken keep you from celebrating. We've got 3 different kinds of vegan wings, all served with house made smoked ranch!!</p>
+                        </span>
                     </p>
                 </div>
                 <div class='col-sm-6'>
                     <!-- form -->
                     <form class='form-signup'>
                         <h2 class='form-signup-heading'>Please fill out the form below to gain points with every purchase and earn rewards on select menu items.</h2>
-                        <label for='inputFirstName'>First name</label>
-                        <input type='text' id='inputFirstName' class='form-control' placeholder="First name">
-                        <label for='inputLastName'>Last name</label>
-                        <input type='text' id='inputLastName' class='form-control' placeholder="Last name">
-                        <label for='inputEmail'>Email address</label>
-                        <input type='email' id='inputEmail' class='form-control' placeholder="Email address">
-                        <label for='inputPassword'>Password</label>
-                        <input type='password' id='inputPassword' class='form-control' placeholder='Password'>
+                        <p>
+                            <label for='inputFirstName'>First name</label>
+                            <input type='text' id='inputFirstName' class='form-control' placeholder="First name">
+                            <span class='warning'>This field is required</span>
+                        </p>
+                        <p>
+                            <label for='inputLastName'>Last name</label>
+                            <input type='text' id='inputLastName' class='form-control' placeholder="Last name">
+                            <span class='warning'>This field is required</span>
+                        </p>
+                        <p>
+                            <label for='inputEmail'>Email address</label>
+                            <input type='email' id='inputEmail' class='form-control' placeholder="Email address">
+                            <span class='warning'>This field is required</span>
+                        </p>
+                        <p>
+                            <label for='inputPassword'>Password</label>
+                            <input type='password' id='inputPassword' class='form-control' placeholder='Password'>
+                            <span class='tip'>Enter a Password With at Least 7 Characters</span>
+                        </p>
+                        <p>
+                            <label for='confirmPassword'>Confirm Password</label>
+                            <input type='password' id='confirmPassword' class='form-control' placeholder="Confirm Password">
+                            <span class='tip'>Confirm Password</span>
+                        </p>
                         <div class='checkbox'>
                             <label><input type='checkbox'>Receive Weekly Updates</label>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block" type='submit'>Sign Up</button>
+                        <button type='submit' id='submit' class="btn btn-lg btn-primary btn-block">Sign Up</button>
                     </form><!-- /form -->
                 </div>
             </div>
-        </section><!-- /middle -->
+        </section>
         <!-- testimonials -->
         <section id='testimonials'>
         <div class='row'>
@@ -117,10 +134,10 @@
                         </div>                 
                     </li><!-- /slide -->
                     <li>
-                        <p>&nbsp;My daughter kept telling me about this great vegan restaurant that I just had to try. We finally made the trip across the bridge and I'm so glad we did. This is, by far, my favorite place to eat! Vegan and much is gluten free or can be made gluten free...I'm in heaven! :-) <3&nbsp;</p> 
+                        <p>&nbsp;My daughter kept telling me about this great vegan restaurant that I just had to try. We finally made the trip across the bridge and I'm so glad we did. This is, by far, my favorite place to eat! Vegan and much of the menu is gluten free or can be made gluten free...I'm in heaven! :-) <3&nbsp;</p> 
                         <div class='testimonial-author'>
                             <img src='img/testimonials/dee.jpg' alt="Author image">
-                            <div class="author-info">Dee Pavey<span>Prestonsburg, Kentucky</span>
+                            <div class="author-info">Dee Pavey<span>Indianapolis, Indiana</span>
                             </div>
                         </div>                 
                     </li><!-- /slide -->
@@ -229,9 +246,10 @@
             <p>&copy; 2017 Andrej Cucilovic of Code Louisville. All Rights Reserved.</p>
         </div><!-- /copyright -->
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>        
-        <script src='js/spoiler.js' type='text/javascript' charset='utf-8'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
         <script src='js/scroll.js' type='text/javascript' charset='utf-8'></script>
+        <script src='js/spoiler.js' type='text/javascript' charset='utf-8'></script>
+        <script src='js/form.js' type='text/javascript' charset='utf-8'></script>
         <script src='js/plugins/jquery.flexslider-min.js' type='text/javascript' charset='utf-8'></script>
         <script src='js/slider.js' type='text/javascript' charset='utf-8'></script>
     </body>
