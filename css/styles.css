@@ -12,7 +12,7 @@ body
 .navbar
 {
     border-color: transparent;
-    font-family: Montserrat,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -104,6 +104,18 @@ img.img-circle
     margin:  auto;
     text-align: center;
     word-spacing: 90px;
+}
+
+@media (max-width: 500px)
+{
+    #menu
+    {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        padding: 2px;
+        padding: 12px 12px; 
+    }
 }/*----- break -----*/
 /*---------- About Us Styles ----------*/
 h1.about, p.about
@@ -156,6 +168,14 @@ div.row
 {
     padding-left: 17px;
     padding-right: 17px;
+}
+
+@media (max-width:575px)
+{
+    div.container-fluid
+    {
+        background-image: url('../img/mobile.jpg');
+    }
 }/*----- break -----*/
 /*---------- Signup Form Styles ----------*/
 .btn-block
@@ -318,6 +338,27 @@ button.spoiler-btn
 .spoiler a
 {
     color: #dfa182;
+}
+
+@media (max-width: 988px)
+{
+    button.spoiler-btn
+    {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 24px;
+        width: 300px;
+        padding: 20px 5px;
+        margin: 20px -30px;
+        cursor: pointer;
+    }
+    
+    img.spoiler-img
+    {
+        display: block;
+        width: 350px;
+        margin: 50px auto;
+    }
 }/*----- break -----*/
 /*---------- Testimonials Styles ----------*/
 #testimonials div, ul, ol, li, h1, h2, p
