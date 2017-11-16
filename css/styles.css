@@ -336,6 +336,7 @@ img.spoiler-img
 {
     display: block;
     width: 650px;
+    max-width: 100%;
     margin: 100px auto;
 }
 
