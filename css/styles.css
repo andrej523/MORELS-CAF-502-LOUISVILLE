@@ -103,18 +103,49 @@ img.img-circle
     padding: 13px;
     margin:  auto;
     text-align: center;
-    word-spacing: 90px;
+    word-spacing: 55px;
 }
 
-@media (max-width: 500px)
+@media (min-width: 1251px and max-width: 1524px)
 {
     #menu
     {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 16px;
-        padding: 2px;
-        padding: 12px 12px; 
+        word-spacing: 1.5em;
+    }
+}
+
+@media (max-width: 1250px)
+{
+    #menu
+    {
+        word-spacing: 0.5em;
+    }
+}
+
+@media (max-width: 650px)
+{
+    #menu
+    {
+        word-spacing: 0.20em;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    #menu
+    {
+        word-spacing: 0.25em;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 360px)
+{
+    #menu
+    {
+        word-spacing: 0.25em;
+        font-size: 10px;
     }
 }/*----- break -----*/
 /*---------- About Us Styles ----------*/
@@ -497,8 +528,6 @@ button.spoiler-btn
     width: 9px;
     height: 9px;
     background-color: #959595;
-    display: block;
-    cursor: pointer;
     border-radius: 50%;
     font: 0/0 a;
     text-shadow: none;
